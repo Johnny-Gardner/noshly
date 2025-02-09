@@ -1,0 +1,106 @@
+/* Ensure styles are specific to the landing page */
+.index-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header container for login button */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Pushes logo left and button right */
+  width: 100%; /* Ensures full width */
+  position: absolute; /* Positions it properly at the top */
+  top: 40px; /* Adjusts how high the header is */
+  left: 0;
+  background-color: white !important;
+  box-shadow: none !important;
+  z-index: 1000;
+}
+
+/* Login button styling */
+.login-button {
+  background-color: white;
+  color: black;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  appearance: none;
+  outline: none;
+  margin-left: auto; /* Ensures button stays on the right */
+  margin-right: 25%;
+}
+
+.login-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid black;
+}
+
+/* Content Wrapper - Ensures Everything is Centered */
+.index-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 75%; /* Keeps content readable */
+  padding: 20px;
+  margin: 0 auto; /* THIS ENSURES CENTERING */
+  box-sizing: border-box; /* Ensures padding doesn't affect centering */
+}
+
+/* Heading styling */
+.index-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 1rem;
+  color: black;
+}
+
+/* Paragraph styling */
+.index-container p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+/* Get Started button styling */
+.index-container .get-started-button {
+  background-color: #4CAF50;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600; /* Adjust to 700 if needed */
+  font-size: 16px;
+  padding: 20px 100px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.index-container .get-started-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.index-logo {
+  height: 75px;
+  width: auto;
+  margin-left: 25%;
+}

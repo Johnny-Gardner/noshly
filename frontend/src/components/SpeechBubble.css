@@ -1,0 +1,51 @@
+/* SpeechBubble.css */
+.speech-bubble {
+  position: relative;
+  max-width: 600px;  /* Set max width */
+  padding: 15px;
+  background-color: white;
+  border-radius: 2px;  /* Slightly rounded corners */
+  margin: 0px;
+  font-size: 16px;
+  line-height: 1.4;
+  display: inline-block;
+  white-space: nowrap;  /* Prevent text from wrapping too early */
+  overflow: hidden;     /* Hide any overflowed text */
+  text-overflow: ellipsis;  /* Add ellipsis if text overflows */
+  word-wrap: break-word;   /* Ensure long words break correctly */
+}
+
+.bubble {
+  position: relative;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.bubble:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #4CAF50; /* Match the bubble color */
+}
+
+/* Tail now points left and appears to the left of the bubble */
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  left: -15px;   /* Position the tail to the left of the bubble */
+  top: 20px;     /* Position it vertically centered */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #f0f0f0;  /* Tail color matching the bubble's background */
+}
