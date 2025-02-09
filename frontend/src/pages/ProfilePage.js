@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { useNavigate, useOutletContext  } from "react-router-dom";
 import "./ProfilePage.css"; // Profile-specific styles
