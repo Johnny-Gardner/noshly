@@ -9,7 +9,7 @@ const baseURL = (() => {
     } else if (hostname.includes("johnnygardner.co.uk")) {
         return "https://www.johnnygardner.co.uk";
     } else {
-        return "https://saas-application.onrender.com";
+        return "https://noshly.onrender.com";
     }
 })();
 
