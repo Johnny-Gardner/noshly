@@ -425,5 +425,9 @@ def logout():
     # Clear the session data
     return jsonify({"message": "Logout successful!"}), 200
 
+@app.route("/status", methods=["GET"])
+def status():
+    return jsonify({"status": "OK"})
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=10000)
