@@ -26,7 +26,7 @@ const IndexPage = () => {
           {/* Main Content Centered */}
           <div className="index-content">
               <h1>Welcome to Noshly.</h1>
-              <p>Generate meal plans in minutes.</p>
+              <p>Your Meal Planning Assistant</p>
               <button onClick={handleRegisterClick} className="get-started-button">
                   Get started
               </button>

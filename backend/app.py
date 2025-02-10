@@ -430,4 +430,9 @@ def status():
     return jsonify({"status": "OK"})
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=10000)
+    environment = os.getenv("FLASK_ENV", "development")
+
+    if environment == "production":
+        app.run(host="0.0.0.0", port=int(os.getenv("PORT", 10000)))  # Render's port
+    else:
+        app.run(host="127.0.0.1", port=5000)  # Local development port
