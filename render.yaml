@@ -1,0 +1,6 @@
+services:
+  - name: noshly-frontend
+    type: static_site
+    repo: https://github.com/Johnny-Gardner/noshly
+    buildCommand: npm ci && chmod +x node_modules/.bin/react-scripts && npm run build
+    staticPublishPath: build

@@ -8,8 +8,6 @@ const baseURL = (() => {
   const { hostname } = window.location;
   if (hostname === "127.0.0.1" || hostname === "localhost") {
     return "http://127.0.0.1:5000";
-  } else if (hostname.includes("johnnygardner.co.uk")) {
-    return "https://www.johnnygardner.co.uk";
   } else {
     return "https://noshly.onrender.com";
   }
