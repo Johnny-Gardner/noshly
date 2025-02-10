@@ -20,7 +20,7 @@ env/
 /build
 
 # Environment variables
-.env
+backend/.env
 
 # misc
 .DS_Store
